@@ -43,7 +43,7 @@ export const bookData = [
     },
     {
         genre: "Romance",
-        trope: "Enemies to Lovers",
+        trope: "Enemies To Lovers",
         title: "A Spanish Love Deception",
         author: "Elena Armas"
     },
