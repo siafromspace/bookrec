@@ -7,7 +7,7 @@ const Home = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1, duration: 1.5 }}
-            className="flex mt-48 items-center flex-col h-full gap-12">
+            className="flex justify-center items-center flex-col h-full gap-12">
             <h1 className="text-white text-4xl text-center">Welcome To My Mini Book Library</h1>
             <Link to="/genre">
                 <motion.button

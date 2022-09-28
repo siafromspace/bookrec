@@ -21,7 +21,7 @@ code {
     @apply bg-transparent text-neutral-200 text-xl border rounded-3xl px-6 py-1
   }
   .main {
-    @apply flex mt-40 items-start flex-col h-full gap-8 flex-grow
+    @apply flex justify-center items-start flex-col h-full gap-8 flex-grow
   }
   .heading-two {
     @apply text-white text-xl font-bold border-b border-neutral-300 pb-2 font-mono
