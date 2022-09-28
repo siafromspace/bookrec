@@ -49,7 +49,7 @@ const Book = ({ book }) => {
             variants={containerVariants}
             initial="hidden"
             animate="visible"
-            className="flex mt-40 flex-col h-full gap-8">
+            className="flex justify-center flex-col h-full gap-8">
             <h2 className="text-white text-2xl font-bold text-center">Thank you for your participation :) </h2>
             <motion.p variants={childVariants} className="text-center text-neutral-100 text-lg ">Based on your selections, your book recommendation is: </motion.p>
             {recommendedBook &&
