@@ -13,6 +13,12 @@ const containerVariants = {
             type: "spring",
             delay: 0.5
         }
+    },
+    exit: {
+        x: "-100vw",
+        transition: {
+            ease: "easeInOut"
+        }
     }
 }
 
@@ -36,6 +42,7 @@ const Trope = ({ addTrope, book }) => {
             variants={containerVariants}
             initial="hidden"
             animate="visible"
+            exit="exit"
             className="main">
             <h2 className="heading-two">Step 2: Choose Your Favorite Trope</h2>
             <ul>
@@ -56,8 +63,15 @@ const Trope = ({ addTrope, book }) => {
                     whileHover={{
                         scale: 1.1,
                         textShadow: "0px 0px 5px rgb(255, 255, 255)",
-                        boxShadow: "0px 0px 5px rgb(255, 255, 255)"
+                        boxShadow: "0px 0px 5px rgb(255, 255, 255)",
+                        transition: {
+                            duration: 0.3,
+                            repeat: Infinity,
+                            ease: "easeIn",
+                            repeatType: "reverse"
+                        }
                     }}
+                    whileTap={{ scale: 0.9 }}
                     variants={btnVariants}
                     className="btn">Get Book</motion.button>
             </Link>}
